@@ -1,0 +1,18 @@
+.card-container {
+    margin: auto;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+.movie-list {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.movie-name {
+    color: teal;
+    font-weight: 700;
+}
