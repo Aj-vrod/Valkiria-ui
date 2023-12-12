@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Movie } from '../movie/movie.service';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  movie =  {
+  @Input() movie: Movie =  {
     id: 0,
     name: "Matrix",
     genre: "sci-fi"

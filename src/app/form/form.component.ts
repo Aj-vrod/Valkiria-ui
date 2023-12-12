@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  @Output() triggerClickEvent = new EventEmitter<string>();
 
+  searchRandomMovie() {
+    this.triggerClickEvent.emit()
+    console.log(">>>>searchRandomMovie")
+  }
 }
