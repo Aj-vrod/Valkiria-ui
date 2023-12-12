@@ -19,6 +19,5 @@ export class MovieComponent {
 
   ngOnInit() {
     this.movieService.getMovie().subscribe(resp => this.movie = resp)
-    console.log(">>>>ngOnInit")
   }
 }

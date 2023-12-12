@@ -20,7 +20,6 @@ export class MovieService {
     }
 
     getMovie(): Observable<Movie> {
-        console.log(">>>>getMovie")
         return this.http.get<Movie>(`${this.url}/movies/5`)
     }
     

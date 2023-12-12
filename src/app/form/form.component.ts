@@ -13,6 +13,5 @@ export class FormComponent {
 
   searchRandomMovie() {
     this.triggerClickEvent.emit()
-    console.log(">>>>searchRandomMovie")
   }
 }
